@@ -103,8 +103,7 @@ var APP_DATA = {
         },
         {
           "tileSize": 512,
-          "size": 1024,
-          "text": ""
+          "size": 1024
         }
       ],
       "faceSize": 1024,
@@ -131,7 +130,8 @@ var APP_DATA = {
         {
           "yaw": 1.436059191979795,
           "pitch": -0.13198257214868647,
-          "title": "orion"
+          "title": "orion",
+          "text": ""
         }
       ]
     }
