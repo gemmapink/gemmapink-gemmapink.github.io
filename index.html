@@ -109,7 +109,7 @@
 <!-- Informational screen -->
 <div id="infoScreen" class="infoScreen">
   <div class="infoContent">
-    <h1 style="font-size: 45pt" >Welcome!</h1>
+    <h1 style="font-size: 45pt" >Welcome</h1>
     <br> <br>
     <p>Welcome to the historic residential district of West Bel Air Avenue! This virtual tour was begun by a volunteer intern at the Aberdeen Historical Museum. It features information and pictures of various houses and other structures. The tour aims to inform you about the history of these buildings and the people who lived and worked in them. <br>
 <br><br>
@@ -138,6 +138,15 @@
   document.getElementById('closeInfo').addEventListener('click', function() {
     document.getElementById('infoScreen').style.display = 'none';
   });
+
+     document.addEventListener("DOMContentLoaded", function() {
+        var hotspotTextDivs = document.querySelectorAll('.info-hotspot-text');
+        hotspotTextDivs.forEach(function(hotspotTextDiv) {
+            if (hotspotTextDiv.innerHTML.trim() === '') {
+                hotspotTextDiv.style.display = 'none';
+            }
+        });
+    });
 </script>
 
 </body>
