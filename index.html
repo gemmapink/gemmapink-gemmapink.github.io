@@ -3,7 +3,7 @@
 <head>
 <title>Project Title</title>
 <meta charset="utf-8">
-<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no, minimal-ui" />
+<meta name="viewport" content="target-densitydpi=device-dpi, width=device-width, initial-scale=1.0, maximum-scale=1.0, minimal-ui" />
 <style> @-ms-viewport { width: device-width; } </style>
 <link rel="stylesheet" href="vendor/reset.min.css">
 <link rel="stylesheet" href="style.css">
@@ -44,6 +44,18 @@
     color: #000;
     cursor: pointer;
   }
+  #infoButton {
+    margin: 10px 0;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 5px;
+  }
+  #infoButton:hover {
+    background-color: #555;
+  }
 </style>
 </head>
 <body class="multiple-scenes">
@@ -52,19 +64,17 @@
 
 <div id="sceneList">
   <ul class="scenes">
-    
       <a href="javascript:void(0)" class="scene" data-id="0-museum">
         <li class="text">museum</li>
       </a>
-    
       <a href="javascript:void(0)" class="scene" data-id="1-kay">
         <li class="text">kay</li>
       </a>
-    
       <a href="javascript:void(0)" class="scene" data-id="2-orion">
         <li class="text">orion</li>
       </a>
-    
+      <!-- Button to open the informational screen -->
+      <li id="infoButton">Info</li>
   </ul>
 </div>
 
@@ -106,12 +116,6 @@
   <img class="icon" src="img/minus.png">
 </a>
 
-<!-- Button to open the informational screen -->
-<a href="javascript:void(0)" id="infoToggle">
-  <img class="icon off" src="img/info.png">
-  <img class="icon on" src="img/info.png">
-</a>
-
 <!-- Informational screen -->
 <div id="infoScreen" class="infoScreen" style="display: none;">
   <div class="infoContent">
@@ -129,7 +133,7 @@
 <script src="index.js"></script>
 
 <script>
-  document.getElementById('infoToggle').addEventListener('click', function() {
+  document.getElementById('infoButton').addEventListener('click', function() {
     document.getElementById('infoScreen').style.display = 'flex';
   });
 
