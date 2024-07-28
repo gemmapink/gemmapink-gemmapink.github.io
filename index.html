@@ -35,7 +35,7 @@
     margin-top: 0;
     color: #fff;
   }
-  .infoContent button {
+  .infoContent button{
     margin-top: 20px;
     padding: 10px 20px;
     background-color: #fff;
@@ -43,6 +43,18 @@
     border-radius: 5px;
     color: #000;
     cursor: pointer;
+  }
+  #infoButton {
+    margin: 10px 0;
+    cursor: pointer;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    background-color: #333;
+    border-radius: 5px;
+  }
+  #infoButton:hover {
+    background-color: #555;
   }
 </style>
 </head>
@@ -62,9 +74,7 @@
         <li class="text">orion</li>
       </a>
       <!-- Button to open the informational screen -->
-      <a href="javascript:void(0)" id="infoButton" class="scene">
-        <li class="text">Info
-      </a>
+      <li id="infoButton">Info</li>
   </ul>
 </div>
 
@@ -107,13 +117,11 @@
 </a>
 
 <!-- Informational screen -->
-<div id="infoScreen" class="infoScreen" style="display: none;">
+<div id="infoScreen" class="infoScreen">
   <div class="infoContent">
- <h1>Welcome to the Historic Residential District of West Bel Air Avenue!</h1>
-            <p>This virtual tour was begun by a volunteer intern at the Aberdeen Historical Museum. It features information and pictures of various houses and other structures. The tour aims to inform you about the history of these buildings and the people who lived and worked in them.</p>
-            <p>Please note that the tour is still a work in progress, and more buildings and details will be added over time. However, the information provided in this tour is just a small percentage of the history of West Bel Air Avenue and greater Aberdeen. If you would like to contribute to the tour by providing feedback, reporting bugs or glitches, or sharing additional knowledge about these places on West Bel Air Avenue, please fill out this form.</p>
-            <p>To learn more about Aberdeen, please visit our website.</p>
-            <p>We hope you enjoy the tour!</p>
+    <h2>Informational Screen</h2>
+    <p>Welcome to the historic residential district of West Bel Air Avenue! This virtual tour was begun by a volunteer intern at the Aberdeen Historical Museum. It features information and pictures of various houses and other structures. The tour aims to inform you about the history of these buildings and the people who lived and worked in them. Please note that the tour is still a work in progress, and more buildings and details will be added over time. However, the  information provided in this tour is just a small percentage of the history of West Bel Air Avenue and greater Aberdeen. If you would like to contribute to the tour by providing feedback, reporting bugs or glitches, or sharing additional knowledge about these places on West Bel Air Avenue, please fill out this form.
+</p>
     <button id="closeInfo">Close</button>
   </div>
 </div>
