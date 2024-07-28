@@ -8,7 +8,7 @@
 <link rel="stylesheet" href="vendor/reset.min.css">
 <link rel="stylesheet" href="style.css">
 </head>
-<body class="multiple-scenes ">
+<body class="multiple-scenes">
 
 <div id="pano"></div>
 
@@ -68,12 +68,37 @@
   <img class="icon" src="img/minus.png">
 </a>
 
+<!-- Button to open the informational screen -->
+<a href="javascript:void(0)" id="infoToggle">
+  <img class="icon off" src="img/info.png">
+  <img class="icon on" src="img/info.png">
+</a>
+
+<!-- Informational screen -->
+<div id="infoScreen" class="infoScreen" style="display: none;">
+  <div class="infoContent">
+    <h2>Informational Screen</h2>
+    <p>Here you can add your informational text. Describe the tour, provide instructions, or any other relevant information.</p>
+    <button id="closeInfo">Close</button>
+  </div>
+</div>
+
 <script src="vendor/screenfull.min.js" ></script>
 <script src="vendor/bowser.min.js" ></script>
 <script src="vendor/marzipano.js" ></script>
 
 <script src="data.js"></script>
 <script src="index.js"></script>
+
+<script>
+  document.getElementById('infoToggle').addEventListener('click', function() {
+    document.getElementById('infoScreen').style.display = 'block';
+  });
+
+  document.getElementById('closeInfo').addEventListener('click', function() {
+    document.getElementById('infoScreen').style.display = 'none';
+  });
+</script>
 
 </body>
 </html>
