@@ -103,7 +103,8 @@ var APP_DATA = {
         },
         {
           "tileSize": 512,
-          "size": 1024
+          "size": 1024,
+          "text": ""
         }
       ],
       "faceSize": 1024,
