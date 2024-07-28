@@ -35,7 +35,7 @@
     margin-top: 0;
     color: #fff;
   }
-  .infoContent button .scenes{
+  .infoContent button {
     margin-top: 20px;
     padding: 10px 20px;
     background-color: #fff;
@@ -43,18 +43,6 @@
     border-radius: 5px;
     color: #000;
     cursor: pointer;
-  }
-  #infoButton {
-    margin: 10px 0;
-    cursor: pointer;
-    color: #fff;
-    text-align: center;
-    padding: 10px;
-    background-color: #333;
-    border-radius: 5px;
-  }
-  #infoButton:hover {
-    background-color: #555;
   }
 </style>
 </head>
@@ -74,7 +62,9 @@
         <li class="text">orion</li>
       </a>
       <!-- Button to open the informational screen -->
-      <li id="infoButton">Info</li>
+      <a href="javascript:void(0)" id="infoButton" class="scene">
+        <li class="text">Info</li>
+      </a>
   </ul>
 </div>
 
@@ -117,7 +107,7 @@
 </a>
 
 <!-- Informational screen -->
-<div id="infoScreen" class="infoScreen">
+<div id="infoScreen" class="infoScreen" style="display: none;">
   <div class="infoContent">
     <h2>Informational Screen</h2>
     <p>Here you can add your informational text. Describe the tour, provide instructions, or any other relevant information.</p>
