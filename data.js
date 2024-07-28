@@ -138,8 +138,8 @@ var APP_DATA = {
   "name": "Project Title",
   "settings": {
     "mouseViewMode": "qtvr",
-    "autorotateEnabled": true,
-    "fullscreenButton": false,
-    "viewControlButtons": false
+    "autorotateEnabled": false,
+    "fullscreenButton": true,
+    "viewControlButtons": true
   }
 };
