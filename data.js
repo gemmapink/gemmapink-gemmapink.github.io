@@ -142,7 +142,7 @@ var APP_DATA = {
     "autorotateEnabled": false,
     "fullscreenButton": true,
     "viewControlButtons": true
-    viewer.controls().enableMethodGroup('arrowKeys');
+   // viewer.controls().enableMethodGroup('arrowKeys');
 
   }
 };
