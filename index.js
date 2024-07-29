@@ -78,7 +78,7 @@
       { cubeMapPreviewUrl: urlPrefix + "/" + data.id + "/preview.jpg" });
     var geometry = new Marzipano.CubeGeometry(data.levels);
 
-    var limiter = Marzipano.RectilinearView.limit.traditional(2 * sceneData.faceSize, 100*Math.PI/180, 120*Math.PI/180);
+    var limiter = Marzipano.RectilinearView.limit.traditional(2 * data.faceSize, 100*Math.PI/180, 120*Math.PI/180);
     var view = new Marzipano.RectilinearView(data.initialViewParameters, limiter);
 
     var scene = viewer.createScene({
@@ -141,9 +141,18 @@
   sceneListToggleElement.addEventListener('click', toggleSceneList);
 
   // Start with the scene list open on desktop.
-  if (!document.body.classList.contains('mobile')) {
-    showSceneList();
-  }
+
+
+  function closeAllInfoHotspots() {
+  var infoHotspots = document.querySelectorAll('.info-hotspot.visible');
+  infoHotspots.forEach(function(hotspot) {
+    hotspot.classList.remove('visible');
+  });
+  var modals = document.querySelectorAll('.info-hotspot-modal.visible');
+  modals.forEach(function(modal) {
+    modal.classList.remove('visible');
+  });
+}
 
   // Set handler for scene switch.
   scenes.forEach(function(scene) {
@@ -190,6 +199,7 @@
     startAutorotate();
     updateSceneName(scene);
     updateSceneList(scene);
+    closeAllInfoHotspots();
   }
 
   function updateSceneName(scene) {
