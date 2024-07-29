@@ -35,8 +35,8 @@ var APP_DATA = {
       "infoHotspots": [
         {
           "yaw": 2.069047906666503,
-          "pitch": 0,
-          "title": "museum",
+          "pitch": -1,
+          "title": "museums",
           "text": "Welcome to the historic residential district of West Bel Air Avenue! This virtual tour was begun by a volunteer intern at the Aberdeen Historical Museum. It features information and pictures of various houses and other structures. The tour aims to inform you about the history of these buildings and the people who lived and worked in them. Please note that the tour is still a work in progress, and more buildings and details will be added over time. However, the  information provided in this tour is just a small percentage of the history of West Bel Air Avenue and greater Aberdeen. If you would like to contribute to the tour by providing feedback, reporting bugs or glitches, or sharing additional knowledge about these places on West Bel Air Avenue, please fill out this form. To learn more about Aberdeen, please visit our website. We hope you enjoy the tour!"
         }
       ]
@@ -103,7 +103,8 @@ var APP_DATA = {
         },
         {
           "tileSize": 512,
-          "size": 1024
+          "size": 1024,
+          "text": ""
         }
       ],
       "faceSize": 1024,
@@ -130,8 +131,7 @@ var APP_DATA = {
         {
           "yaw": 1.436059191979795,
           "pitch": -0.13198257214868647,
-          "title": "orion",
-          "text": ""
+          "title": "orion"
         }
       ]
     }
@@ -142,7 +142,5 @@ var APP_DATA = {
     "autorotateEnabled": false,
     "fullscreenButton": true,
     "viewControlButtons": true
-    viewer.controls().enableMethodGroup('arrowKeys');
-
   }
 };
