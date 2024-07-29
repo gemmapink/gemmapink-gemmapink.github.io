@@ -387,7 +387,7 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
 
   cursor: pointer;
 
-  opacity: 0;
+  opacity: 1;
 
   -ms-transform: translateX(-8px);
   -webkit-transform: translateX(-8px);
@@ -408,7 +408,7 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
 }
 
 .no-touch .link-hotspot:hover .link-hotspot-tooltip {
-  opacity: 0;
+  opacity: 1;
   -ms-transform: translateX(0);
   -webkit-transform: translateX(0);
   transform: translateX(0);
