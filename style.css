@@ -408,7 +408,7 @@ body.single-scene #sceneList, body.single-scene #sceneListToggle {
 }
 
 .no-touch .link-hotspot:hover .link-hotspot-tooltip {
-  opacity: 1;
+  opacity: 0;
   -ms-transform: translateX(0);
   -webkit-transform: translateX(0);
   transform: translateX(0);
